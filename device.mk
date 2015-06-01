@@ -26,15 +26,13 @@ PRODUCT_COPY_FILES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc_nci.pn54x.default
+    nfc_nci.bcm2079x.default \
+    NfcNci
 
 # NFC config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
 # Sensors
 PRODUCT_COPY_FILES += \
